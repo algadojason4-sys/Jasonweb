@@ -141,7 +141,6 @@ h4{
 @media (max-width: 768px) {
   body{
     position:fixed;
-    margin: 0;
   }
 }
 
