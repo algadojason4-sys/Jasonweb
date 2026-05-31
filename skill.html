@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills</title>
+  <style>
+    body{
+      margin: 0;
+      padding:0;
+    }
+
+    .container{
+      display: flex;
+      background-color: transparent;
+      flex-direction: column;
+      align-items: center;
+      margin: 2%;
+      margin-left: 17%;
+      padding:15px;
+      border-radius: 50px;
+      padding-bottom: 30px;
+      box-shadow: 5px 2px 30px black;
+      position: fixed;
+    }
+
+    .box-container{
+      padding: 1px;
+      background-color: transparent;
+      text-align: center;
+      border-radius: 20px;
+      text-align: center;
+      align-items: center;
+      width: 50%;
+      margin: 11px;
+      box-shadow: 1px 6px 20px black;
+      transition: 0.3s ease;
+      
+    }
+
+    .box-container:hover{
+    transform: rotate(10deg) scale(1.05);
+    }
+
+    p{
+      color: white;
+      font-weight: 300;
+      font-size: 16px;
+      text-shadow: 2px 15px 30px black;
+    }
+
+     span{
+      color: darkred;
+      text-shadow: 2px 2px 8px darkred;
+      font-weight: 600;
+      font-size:  32px;
+    }
+
+    .vid-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+     object-fit: cover;
+     height: 100%;
+     width: 100%;
+     z-index: -1;
+    }
+
+    button{
+      box-shadow: 5px 13px 30px black;
+    }
+    .btn{
+      padding: 10px;
+      width: 10%;
+      border-radius: 15px;
+      background: transparent;
+      color: darkred;
+      font-weight: 800;
+      font-size: 18px;
+      transition: 0.5s ease;
+    }
+
+    .btn:hover{
+      transform: rotatey(150deg);
+    }
+
+    @media(max-width: 789px){
+
+      .container{
+        margin-left: 2%;
+      }
+
+      .box-container{
+        width: 95%;
+        
+      }
+      .btn{
+        width: 100px;
+      }
+
+      .btn:hover{
+        scale: (1.2);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <video class=" vid-bg" autoplay muted loop playninline>
+    <source src="Tiktokphoto.mp4">
+  </video>
+
+
+<section class=" container">
+  <button class="btn" onclick="window.history.back()">Back</button>
+  <div class=" box-container">
+    <h1><span> Microsoft Office</span></h1>
+    <p>Microsoft Office
+     Microsoft Word (documents and formatting)
+     Excel (data entry, basic formulas)
+     PowerPoint (presentation and slides)
+    </p>
+  </div>
+<div class="box-container">
+  <h2><span>Web development </span></h2>
+  <p>HTML CSS Responsive Design("Still Learning")</p>
+</div>
+<div class=" box-container">
+  <h3><span>Programming</span></h3>
+  <p>JavaScript("Basic interactiviy")</p>
+</div>
+  <div class="box-container">
+    <h4><span>Tools</span></h4>
+    <p>GitHub("Uploading Web Projects")
+    VS Code ("Coding Editor")
+    </p>
+</div>
+</section>
+</body>
+</html>

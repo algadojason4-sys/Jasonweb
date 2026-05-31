@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <video class="vbg" autoplay muted loop playinline>
+    <source src="Tiktokphoto.mp4">
+  </video>
+
+  <h1> My Hobies</h1>
+
+  <section class="box">
+
+    <button class="btn" onclick="window.history.back()">back</button>
+
+    <p>Hi, it's Jason, my hobies thinking of thinks that's conufuse—me i play online games such as moble legends bang bang.
+       I love playing games to the point i decide to study the programming, and—fortunately i learned basics programming, i also exlpore the web programming and i love this, i love—programming. future to be Web developer
+    </p>
+  </section>
+</body>
+<style>
+  body{
+    margin: 0;
+    top: 0;
+  }
+  h1{
+    text-align: center;
+    font-size: 42px;
+    font-weight: 600;
+    text-shadow: 1px 11px 10px black;
+  }
+
+  .vbg{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    position: fixed;
+    z-index: -1;
+  }
+
+  .box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: black;
+    padding: 90px;
+  }
+
+   button{
+      background-color: transparent;
+      padding: 15px;
+      width: 98px;
+      border-radius: 20px;
+    }
+
+    .btn{
+      font-size: 18px;
+      font-weight: 600;
+      color: black;
+      box-shadow: 3px 3px 30px black;
+    }
+
+    .btn:hover{
+      transform: scale(1.2);
+    }
+
+  @media(max-width:789px){
+    .box{
+      margin-top: 90px;
+      padding: 20%;
+      text-align: justify;
+      font-weight: 800;
+      color: black;
+    }
+    h1{
+      text-align: center;
+      color: darkred;
+      font-weight: 900;
+      text-shadow: 1px 5px 11px black;
+      box-shadow: 5px 15px 30px black;
+      border-radius: 20px;
+    }
+
+    button{
+      background-color: transparent;
+      padding: 15px;
+      width: 98px;
+      border-radius: 20px;
+    }
+
+    .btn{
+      font-size: 18px;
+      font-weight: 800;
+      color: darkred;
+      box-shadow: 3px 3px 30px black;
+    }
+
+    .btn:hover{
+      transform: rotatey(150deg);
+    }
+  }
+</style>
+</html>

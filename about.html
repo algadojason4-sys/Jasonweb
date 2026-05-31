@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About me</title>
+</head>
+<style>
+  body{
+    margin: 0;
+    padding-inline: 0;
+    box-sizing: border-box;
+  }
+  .photo-bg{
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+  }
+
+  h1{
+    margin-left:68%;
+    margin-right: 20px;
+    color: darkred;
+    font-size: 42px;
+    text-shadow: 5px 9px 9px rgb(175, 134, 134);
+    box-shadow: 5px 15px 25px black;
+    border-radius: 15px;
+    text-align: center;
+  }
+
+  p{
+    color: darkred;
+    margin-left: 68%;
+    margin-right: 20px;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 5px 5px 10px black;
+    box-shadow: 5px 2px 30px black;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  @media (max-width: 768px) {
+    body{
+      margin-top: 50%;
+    }
+
+    button{
+      position: fixed;
+      bottom: 250px;
+      left: 120px;
+    }
+
+  h1 {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 28px;
+    text-align: center;
+    padding: 10px;
+  
+  }
+
+  p {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+    text-align: justify;
+    padding: 15px;
+  }
+
+
+}
+button {
+ position: absolute;
+ margin-top: 2px;
+ padding:10px;
+ width: 15%;
+ margin-left: 50px;
+ border-radius: 20px;
+ background: transparent;
+ color: darkred;
+ font-size: 20px;
+ font-weight: 600;
+ box-shadow: 1px 9px 30px black;
+}
+
+button:hover{
+  transform: scale(1.1);
+  transition: 0.5s ease;
+}
+  
+</style>
+<body>
+  <video class="photo-bg" autoplay muted loop playinline>
+    <source src="Tiktokphoto.mp4">
+  </video>
+  <button onclick="window.history.back()">Back</button>
+  <h1>About me</h1>
+  <p>About Me 
+  I am an aspiring web developer currently building my skills in HTML, CSS, JavaScript, and backend technologies like Node.js and Express.js. I enjoy creating simple, responsive, and user-friendly websites while continuously learning new tools and improving my coding abilities.
+  At the moment, I am actively looking for opportunities to grow as a developer and gain real-world experience. I am motivated, eager to learn, and ready to contribute to projects that help me improve and add value to a team.</p>
+</body>
+</html>
