@@ -138,14 +138,23 @@ h4{
   margin-bottom: 10px;
 }
 
-@media(max-width: 800px){
-  .video-bg{
-    position: fixed;
+@media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+    position: relative;
   }
 
-}
+  * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
 
-
+  .video-bg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  }
 
 
 
