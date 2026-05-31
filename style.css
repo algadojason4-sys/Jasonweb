@@ -139,22 +139,11 @@ h4{
 }
 
 @media (max-width: 768px) {
-  html, body {
-    overflow-x: hidden;
-    position: relative;
+  body{
+    position:fixed;
+    margin: 0;
   }
-
-  * {
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-
-  .video-bg {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-  }
+}
 
 
 
